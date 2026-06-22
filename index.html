@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>TaskFlow Pro</h1>
+
+            <p>
+                Organize your day efficiently
+            </p>
+
+            <button id="themeBtn">
+                Dark Mode
+            </button>
+
+        </div>
+
+        <!-- Stats -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <h2 id="totalCount">
+                    0
+                </h2>
+
+                <span>Total</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="pendingCount">
+                    0
+                </h2>
+
+                <span>Pending</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="completedCount">
+                    0
+                </h2>
+
+                <span>Completed</span>
+
+            </div>
+
+        </div>
+
+        <!-- Add Task -->
+
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task...">
+
+            <button id="addBtn">
+                Add Task
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search tasks...">
+
+        </div>
+
+        <!-- Filters -->
+
+        <div class="filters">
+
+            <button id="allBtn">
+                All
+            </button>
+
+            <button id="pendingBtn">
+                Pending
+            </button>
+
+            <button id="completedBtn">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Task Counter -->
+
+        <div class="task-info">
+
+            <span id="taskCounter">
+                Tasks: 0
+            </span>
+
+        </div>
+
+        <!-- Tasks -->
+
+        <ul id="taskList">
+
+        </ul>
+
+        <!-- Empty State -->
+
+        <div id="emptyState">
+
+            <h2>No Tasks Yet</h2>
+
+            <p>
+                Add your first task and start being productive.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Edit Modal -->
+
+    <div id="editModal" class="modal">
+
+        <div class="modal-content">
+
+            <h2>Edit Task</h2>
+
+            <input
+                type="text"
+                id="editInput">
+
+            <div class="modal-buttons">
+
+                <button id="saveEdit">
+                    Save
+                </button>
+
+                <button id="cancelEdit">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
