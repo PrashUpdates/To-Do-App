@@ -12,7 +12,7 @@ A modern, responsive, and feature-rich task management application built with **
 </p>
 
 
-# 🔖 Management
+# 🫟 Features
 - Add new tasks instantly
 - Edit tasks with a custom popup modal
 - Delete tasks with a single click
